@@ -1,0 +1,356 @@
+﻿
+/*# sourceMappingURL=maps/custom.css.map */
+/*
+File Name:      custom.css
+Description:  You can add your custom CSS here and it will overwrite template styles
+*/
+
+/*# sourceMappingURL=maps/custom.css.map */
+.img-bg {
+    background-color: #060818;
+    /*   background-image: url("/img/rrr-bg.jpg");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: relative;
+}
+
+    .img-bg::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 24px;
+        background-image: linear-gradient(to right, rgba(236, 240, 246, 0.15) 4px, transparent 4px), linear-gradient(to right, rgba(236, 240, 246, 0.15) 4px, transparent 4px), linear-gradient(to right, rgba(236, 240, 246, 0.15) 4px, transparent 4px), linear-gradient(to right, rgba(236, 240, 246, 0.15) 4px, transparent 4px), linear-gradient(to right, rgba(236, 240, 246, 0.15) 4px, transparent 4px), linear-gradient(to right, rgba(236, 240, 246, 0.15) 4px, transparent 4px), linear-gradient(to right, rgba(0, 0, 0, 0.1) 4px, transparent 4px), linear-gradient(to right, rgba(0, 0, 0, 0.11) 4px, transparent 4px);
+        background-repeat: repeat-x;
+        background-size: 36px 12px, 36px 15px, 36px 17px, 36px 20px, 36px 18px, 36px 15px, 72px 15px, 108px 18px;
+        background-position: 0 100%, 6px 100%, 12px 100%, 18px 100%, 24px 100%, 30px 100%, 6px 100%, 24px 100%;
+    }
+
+    .img-bg::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+       /* background-image: url("/img/page-heading-pattern.png");*/
+        background-size: auto;
+        background-position: 100% 0;
+        background-repeat: no-repeat;
+        opacity: 0.4;
+    }
+
+    .img-bg .container {
+        position: relative;
+        z-index: 2;
+    }
+
+@media only screen and (min-device-width: 480px) {
+    .logo-img {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .header-mobile__logo-img {
+        width: 197px;
+        height: auto;
+        margin-top: -10px;
+    }
+}
+
+.form-control {
+    color: #fff;
+}
+
+.navbar {
+    padding: 0rem 1rem !important;
+}
+
+.nav-link {
+  
+    text-transform: uppercase;
+   
+    font-family: "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    color: #fff !important;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+    color: #ffcc00 !important;
+}
+
+
+.top-nav {
+    font-family: "Montserrat", sans-serif;
+}
+
+.betting-console .card-body {
+    padding-top: 1px !important
+}
+
+.betting-console .quickbet {
+    padding: 5px 9px !important;
+    font-size: 12px;
+}
+
+.dark-right-border {
+    border-right: 1px solid rgba(255, 255, 255, 0.05) !important
+}
+
+.dark-bg {
+    background-color: #1e2024 !important;
+}
+
+.my-bets {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.post-bet {
+    color: #fff;
+    border-color: #009900 !important;
+    background-color: #009900 !important
+}
+
+.meron-bg {
+    /*background-color:#B31013*/
+    background-color: #f34141
+}
+
+.wala-bg {
+    /*background-color:#0B4592*/
+    background-color: #1e81f1
+}
+
+.noty_theme__sunset.noty_bar .noty_body {
+    font-size: 16px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.noty_theme__sunset.noty_type__error {
+    background-color: #f34141 !important
+}
+
+.noty_theme__sunset.noty_type__success {
+    background-color: #2eb85c !important
+}
+
+.currentPointsDisplay {
+    font-size: 18px;
+}
+
+@media (max-width: 479px) {
+    .totalBetsDisplay {
+        font-size: 24px !important
+    }
+
+    .payoutDisplay {
+        font-size: 18px !important
+    }
+
+    .fightNoDisplay {
+        font-size: 18px
+    }
+
+    .my-bets {
+        font-size: 14px
+    }
+}
+
+.label-success {
+    background-color: #2eb85c !important
+}
+
+.statusLabel {
+    font-weight: 900 !important;
+    font-size: 13px !important;
+}
+
+.winner-indicator {
+    color: #ffdc11 !important;
+    font-weight: bold;
+    font-size: 14px
+}
+
+.cancel-indicator {
+    color: #ffdc11 !important;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.blinktext {
+    animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+#betting-dashboard .label {
+    font-size: 10px !important;
+}
+
+.bettingStatus {
+    padding-top: 11px !important;
+}
+
+.betAmount {
+    font-weight: bold
+}
+
+.userPayoutLabel {
+    background-color: #156DA8;
+    padding: 0px 2px 0px 2px;
+    color: #fff;
+    font-size: 13px;
+}
+
+#betting-dashboard .beting-status-label {
+    font-size: 15px !important;
+}
+/*
+@media (min-width:481px)  {
+  .totalBetsDisplay {
+    font-size: 24px !important
+  }
+  .payoutDisplay {
+    font-size: 24px !important
+  }
+}
+
+@media (min-width:600px)  {
+  .totalBetsDisplay {
+    font-size: 24px !important
+  }
+  .payoutDisplay {
+    font-size: 24px !important
+  }
+}
+*/
+
+.marquee {
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+    background: #B31013;
+    color: #fff;
+}
+
+    .marquee p {
+        white-space: nowrap;
+        position: absolute;
+        font-weight: bold;
+        font-size: 18px;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        line-height: 30px;
+        text-align: center;
+        /* Starting position */
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        /* Apply animation to this element */
+        -moz-animation: scroll-left 14s linear infinite;
+        -webkit-animation: scroll-left 14s linear infinite;
+        animation: scroll-left 14s linear infinite;
+    }
+
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+    }
+
+    100% {
+        -moz-transform: translateX(-300%);
+    }
+}
+
+@-webkit-keyframes scroll-left {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(-300%);
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+        /* Browser bug fix */
+        -webkit-transform: translateX(100%);
+        /* Browser bug fix */
+        transform: translateX(100%);
+    }
+
+    100% {
+        -moz-transform: translateX(-300%);
+        /* Browser bug fix */
+        -webkit-transform: translateX(-300%);
+        /* Browser bug fix */
+        transform: translateX(-300%);
+    }
+}
+
+#box-history-automatic {
+    position: relative;
+    height: 190px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: #ECF0F1;
+}
+
+    #box-history-automatic .badge, .box-history-automatic .badge {
+        box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.5);
+        -moz-box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.5);
+        -webkit-box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.5);
+        -o-box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.5);
+        -moz-border-radius: 30px;
+        -webkit-border-radius: 30px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        font-size: 11px;
+        font-weight: bold;
+        margin-left: 2px;
+        margin-right: auto;
+        font-family: "Montserrat", sans-serif !important;
+    }
+
+    #box-history-automatic .badge-primary, .box-history-automatic .badge-primary {
+        background-color: #0B4592;
+    }
+
+    #box-history-automatic .badge-danger, .box-history-automatic .badge-danger {
+        background-color: #B31013;
+    }
+
+    #box-history-automatic table tr td, .box-history-automatic table tr td {
+        max-width: 32px;
+        min-width: 35px;
+        max-height: 30px;
+        min-height: 30px;
+        height: 30px;
+        padding: 2px 3px 1px 3px;
+        background-color: #ECF0F1;
+        color: #fff;
+        border: 1px solid #dedede;
+    }
+
+        #box-history-automatic table tr td span.badge {
+            margin: 0px;
+            margin-left: 0px;
+        }
+
+    #box-history-automatic .badge, .box-history-automatic .badge {
+        padding: 10px 2px;
+    }
